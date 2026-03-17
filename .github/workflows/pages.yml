@@ -1,0 +1,51 @@
+on:
+  push:
+    branches:
+      - live
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # important if TerriaJS is a submodule
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      # If TerriaJS is a separate package that needs building
+      - name: Build TerriaJS
+        run: |
+          if [ -d "node_modules/terriajs" ]; then
+            cd node_modules/terriajs
+            npm install
+            npm run build
+            cd ../../
+          fi
+
+      - name: Build TerriaMap
+        run: npm run build
+
+      # Optional: confirm output
+      - name: Check build output
+        run: ls -la wwwroot
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./wwwroot
+          publish_branch: gh-pages
+          force_orphan: true
