@@ -34,6 +34,12 @@ jobs:
       - name: Build TerriaMap
         run: yarn gulp
 
+      - name: Fix base href
+        run: sed -i 's|<base href="/" />|<base href="/terria/" />|' wwwroot/index.html
+      
+      - name: Disable Jekyll
+        run: touch wwwroot/.nojekyll
+
       # Optional: confirm output
       - name: Check build output
         run: ls -la wwwroot
