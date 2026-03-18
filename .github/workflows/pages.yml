@@ -28,8 +28,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Install gulp CLI
+        run: yarn global add gulp-cli
+
       - name: Build TerriaMap
-        run: yarn build
+        run: yarn gulp
 
       # Optional: confirm output
       - name: Check build output
