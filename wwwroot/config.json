@@ -1,6 +1,7 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
+  "baseUrl": "/terria/",
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
@@ -38,7 +39,6 @@
         },*/
     // This is used in various text messages. You should also set <title> in index.html
     "appName": "PvGenuchten Terria Maps",
-    "baseUrl": "/terria/",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pvgenuchten.github.io/terria",
   "private": true,
   "workspaces": {
     "packages": [
