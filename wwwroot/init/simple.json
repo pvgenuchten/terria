@@ -21,16 +21,6 @@
             }
           ],
           "url": "https://maps.isric.org/mapserv/wrb",
-          "opacity": 1,
-          "rectangle": {
-            "west": 180,
-            "south": -80,
-            "east": -180,
-            "north": 80
-          },
-          "tileErrorHandlingOptions": {
-            "ignoreUnknownTileErrors": true
-          },
           "id": "isric-wrb"
         }
       ]
