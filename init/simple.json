@@ -1,0 +1,77 @@
+{
+  "homeCamera": {
+    "north": 52,
+    "east": 0,
+    "south": 50,
+    "west": 6
+  },
+  "catalog": [
+    {
+      "id": "aB3dE4FgHi",
+      "type": "group",
+      "name": "ISRIC",
+      "members": [
+        {
+          "type": "wms-group",
+          "name": "ISRIC WMS - WRB classes",
+          "info": [
+            {
+              "name": "Disclaimer",
+              "content": "ISRIC - maps"
+            }
+          ],
+          "url": "https://maps.isric.org/mapserv/wrb",
+          "id": "isric-wrb"
+        }
+      ]
+    },
+    {
+  "type": "group",
+  "name": "Kenya Soil Properties",
+  "description": "Soil property raster datasets for Kenya from KALRO-KENSIS.",
+  "members": [
+    {
+      "type": "cog",
+      "name": "Soil Organic Carbon (SOC)",
+      "description": "Soil organic carbon data for Kenya.",
+      "url": "https://kalro-ict.github.io/kensis/maps/SOC_Kenya.tif",
+      "renderOptions": {
+        "resampleMethod": "bilinear"
+      }
+    },
+    {
+      "type": "cog",
+      "name": "Soil pH",
+      "description": "Soil pH data for Kenya.",
+      "url": "https://kalro-ict.github.io/kensis/maps/soilPH_Kenya.tif",
+      "renderOptions": {
+        "resampleMethod": "bilinear"
+      }
+    },
+    {
+      "type": "cog",
+      "name": "Soil Phosphorus",
+      "description": "Soil phosphorus data for Kenya.",
+      "url": "https://kalro-ict.github.io/kensis/maps/soilPhosphorus_Kenya.tif",
+      "renderOptions": {
+        "resampleMethod": "bilinear"
+      }
+    },
+    {
+      "type": "cog",
+      "name": "Soil Potassium",
+      "description": "Soil potassium data for Kenya.",
+      "url": "https://kalro-ict.github.io/kensis/maps/soilPotassium_Kenya.tif",
+      "renderOptions": {
+        "resampleMethod": "bilinear"
+      }
+    }
+  ]
+}
+  ],
+  "viewerMode": "3dSmooth",
+  "baseMaps": {
+    "defaultBaseMapId": "basemap-openstreetmap",
+    "previewBaseMapId": "basemap-natural-earth-II"
+  }
+}
