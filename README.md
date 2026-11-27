@@ -1,3 +1,7 @@
+# Terria Map at gihub.io
+
+This is a clone of the terria map project, with every push to the 'pvgenuchten' branch, the latest version is deployed on github.io. Notice the CI in .github/workflows.
+
 # Terria Map
 
 [![Build Status](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml) [![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://docs.terria.io/)
