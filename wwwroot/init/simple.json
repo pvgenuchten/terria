@@ -12,7 +12,7 @@
       "name": "ISRIC",
       "members": [
         {
-          "type": "wms",
+          "type": "wms-group",
           "name": "ISRIC WMS - WRB classes",
           "info": [
             {
@@ -39,7 +39,7 @@
   "type": "group",
   "name": "Kenya Soil Properties",
   "description": "Soil property raster datasets for Kenya from KALRO-KENSIS.",
-  "items": [
+  "members": [
     {
       "type": "cog",
       "name": "Soil Organic Carbon (SOC)",
