@@ -13,6 +13,9 @@
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
       "url": ""
     },
+    "shareUrl": "share",
+    "serverConfigUrl": null,
+    "shortenShareUrls": false,
     /*
         // Text that will be added to any pages printed from your site.
         printDisclaimer:{
